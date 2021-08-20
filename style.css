@@ -1,0 +1,88 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+ background-image: url(image/cover.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+@font-face {
+    font-family:rajon;
+    src: url(font/rajon.ttf);
+}
+@font-face {
+    font-family: Bokul;
+    src: url(font/Bokul.ttf);
+}
+@font-face {
+    font-family: merin;
+    src: url(font/Merin.ttf);
+}
+@keyframes move{
+    0%{left: 0px;top:0px;}
+    25%{left: 20px;top:0px;}
+    50%{left: 0px;top:0px;}
+    75%{left: -20px;top:0px;}
+    100%{left: 0px;top:0px;}
+}
+h1{
+    color:burlywood;
+    font-family: Bokul;
+    text-align:center;
+    font-size: 100px;
+}
+.link{
+    float:left;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+.link a{
+    font-size: 20px;
+    padding:50px;
+    color:rgba(230, 31, 48, 0.842);
+}
+.link a i{
+    color:whitesmoke;
+}
+.link a:hover{
+    font-size: 30px;
+    color:rgb(243, 160, 6);
+}
+.book{
+    margin-top: 250px;
+    margin-left: 500px;
+    position: relative;
+}
+.book button a{
+   text-decoration: none;
+   font-family: rajon;
+   font-size: 25px;
+   color:black;
+}
+.book button{
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: teal;
+    box-shadow:0 0 10px #FFFFFF,0 0 40px #FFFFFF, 0 0 80px #FFFFFF;
+}
+.book button:hover{
+    background:khaki;
+    color:black;
+}
+.book button a:hover{
+   color:tomato;
+}
+.book button i{
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position:relative;
+}
+.footer{
+    margin-top:104px;
+}
